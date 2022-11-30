@@ -1,0 +1,91 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Josefin Sans',sans-serif;
+    box-sizing: border-box;
+}
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../css/anas-alshanti-feXpdV001o4-unsplash.jpg);
+    background-size: cover;
+    background-position: centre;
+}
+nav{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding-top: 45px;
+    padding-left: 15%;
+    padding-right: 8%;
+    padding-bottom: 5%;
+}
+nav ul li{
+    list-style-type:none;
+    display: inline-block;
+    padding:10px   25px;
+}
+nav ul li a{
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform:capitalize;
+}
+nav ul li a:hover{
+    color:#f9004d;
+    transition: .3s;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-text h2{
+font-size: 75px;
+text-transform: capitalize;
+margin-bottom: 20px;
+color: white;
+}
+.about-text h5{
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+    color: white;
+}
+.about-text p{
+    color: #f9004d;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+button{
+    background-color: #f9004d;
+    text-decoration: none;
+    border: 2px solid transparent;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+button:hover{
+    background-color:transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+body{
+    animation:transitionIn 0.75s;
+}
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: rotatey(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: rotatey(0);
+    }
+}
